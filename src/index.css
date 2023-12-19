@@ -1,0 +1,213 @@
+body {
+    background: url('./assets/palm.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+/* .app {
+    background-color: rgba(196, 234, 223, 0.308);
+    width: 1335px;
+    margin: 0 auto;
+} */
+
+.navbar {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    width: 65%;
+    background-color: rgba(99, 99, 99, 0.123);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 6px;
+    position: fixed;
+    top: 0;
+    left: 17.5%;
+    z-index: 2;
+}
+
+.navbar img {
+    height: 120px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    place-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #F97D81;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar a:hover {
+    color: #ff0008;
+    transition: 0.5s;
+    border-bottom: 7px solid red;
+}
+
+.navbar a:not(:hover) {
+    color: #F97D81;
+    transition: 0.5s ease-in-out;
+    border-bottom: none;
+}
+
+
+.navbar-shop {
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+
+.navbar-shop img {
+    height: 30px;
+    cursor: pointer;
+}
+
+sup {
+    color: #ff4147;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.banner {
+    background: url('./assets/banner2.png');
+    background-size: 100%;
+    background-position: 0 -60px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    width: 1235px;
+    height: 600px;
+    margin: 210px auto 0 auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.banner h1 {
+    color: #F97D81;
+    position: relative;
+    top: 70px;
+    font-size: 70px;
+    margin: 0;
+    text-align: center;
+}
+
+.banner button {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(196, 234, 223, 1);
+    color: #F97D81;
+    font-weight: 800;
+    border: none;
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    cursor: pointer;
+    position: relative;
+    top: -30px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 150px auto 0 auto;
+    place-items: center;
+    align-items: center;
+    width: 1235px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.about img {
+    width: 100%;
+}
+
+.about-text {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #F97D81;
+    height: 346px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+}
+
+.about-text p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1235px;
+    margin: 150px auto 0 auto;
+    place-items: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.mission img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    order: 1;
+}
+
+.mission-text {
+    padding: 20px;
+    font-size: 22px;
+    line-height: 40px;
+    color: #F97D81;
+}
+
+.products {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    width: 1235px;
+    margin: 150px auto 0 auto;
+    gap: 10px 0;
+}
+
+.product-card {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.product-card-img {
+    display: grid;
+}
+
+.product-card-img img {
+    height: 350px;
+}
+
+.product-card-text {
+    color: #F97D81;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.product-card-text button {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(196, 234, 223, 1);
+    color: #F97D81;
+    font-weight: 800;
+    border: none;
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    cursor: pointer;
+}
